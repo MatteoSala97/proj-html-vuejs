@@ -6,7 +6,7 @@
 </script>
 
 <template>
-<section class="big-container">
+<section class="big-container pb-5">
         <div class="container">
             <div class="section-header section-center">
                 <h5 class="text-center text-primary">

@@ -2,12 +2,14 @@
 import HeaderApp from './components/header/HeaderApp.vue';
 import HeroApp from './components/main/HeroApp.vue';
 import ButtonsSectionApp from './components/main/ButtonsSectionApp.vue';
+import CounterApp from './components/main/CounterApp.vue';
 
   export default{
     components:{
       HeaderApp,
       HeroApp,
       ButtonsSectionApp,
+      CounterApp
     },
     data(){
       return{
@@ -27,6 +29,7 @@ import ButtonsSectionApp from './components/main/ButtonsSectionApp.vue';
   </header>
   <main>
     <ButtonsSectionApp/>
+    <CounterApp/>
   </main>
 </template>
 
