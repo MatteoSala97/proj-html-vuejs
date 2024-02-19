@@ -19,7 +19,7 @@
             <button>Portfolio</button>
         </div>
 
-        <div class="">
+        <div class="d-flex flex-column ">
             <img src="https://pixner.net/anidio/carton-agency/assets/img/banner/middle.png" alt="Video logo">
             <a href="#"><i class="fas fa-circle-play"></i></a>
         </div>
