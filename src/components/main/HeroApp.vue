@@ -19,10 +19,12 @@
             <button>Portfolio</button>
         </div>
 
-        <div class="d-flex flex-column ">
+        <figure id="hero-thumb"  class="">
             <img src="https://pixner.net/anidio/carton-agency/assets/img/banner/middle.png" alt="Video logo">
-            <a href="#"><i class="fas fa-circle-play"></i></a>
-        </div>
+            <a id="play-btn" href="#">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </figure>
     </div>
     
 
@@ -35,10 +37,48 @@
 <style lang="scss" scoped>
 @use "../../assets/styles/general.scss" as *;
 @use "../../assets/styles/partials/mixins.scss" as *;
+
 div{
     color: $white;
     h5{
         color: $orange;
     }
 }
+
+figure{
+        position: relative;
+        
+        img{
+            display: block;
+        }
+
+        #play-btn{
+            position: absolute;
+            top: 45%;
+            left: 47%;
+            transform: translate(-50%, -50%); 
+            font-size: 2em;
+            color: $white;
+            border-radius: 500px;
+            padding: 10px 20px;
+            background-color: #a616ea;
+            animation: pulse 1.5s infinite;
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(.9) ;
+            box-shadow: 0 0 0 rgba(166, 22, 234, 0.7);
+        }
+        50% {
+            transform: scale(1.1) ;
+            box-shadow: 0 0 0 50px rgba(#a616ea, 0);
+        }
+        100% {
+            transform: scale(1) ;
+            box-shadow: 0 0 0 50px rgba(#a616ea, 0);
+        }
+    }
+
 </style>

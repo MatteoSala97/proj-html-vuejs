@@ -8,7 +8,7 @@
 <template>
     <div class="d-flex justify-content-around align-items-center pt-2">
         <figure>
-            <img src="../../assets/img/footer-logo.png" alt="Anidio Logo">
+            <img src="../../assets/img/logo.png" alt="Anidio Logo">
         </figure>
         
         <ul class="d-flex gap-3">
