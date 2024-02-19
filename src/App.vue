@@ -1,11 +1,13 @@
 <script>
 import HeaderApp from './components/header/HeaderApp.vue';
 import HeroApp from './components/main/HeroApp.vue';
+import ButtonsSectionApp from './components/main/ButtonsSectionApp.vue';
 
   export default{
     components:{
       HeaderApp,
-      HeroApp
+      HeroApp,
+      ButtonsSectionApp,
     },
     data(){
       return{
@@ -23,6 +25,9 @@ import HeroApp from './components/main/HeroApp.vue';
     <HeaderApp/>
     <HeroApp/>
   </header>
+  <main>
+    <ButtonsSectionApp/>
+  </main>
 </template>
 
 <style lang="scss">
