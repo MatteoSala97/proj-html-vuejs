@@ -1,0 +1,21 @@
+@use './partials/mixins.scss' as *;
+
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: $white;
+}
