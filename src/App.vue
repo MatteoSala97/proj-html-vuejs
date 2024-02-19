@@ -32,7 +32,7 @@ header{
   background: url(./assets/img/banner-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 900px;
 }
 
 </style>
