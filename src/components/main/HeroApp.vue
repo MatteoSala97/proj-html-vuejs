@@ -76,8 +76,16 @@
 div{
     padding-top: 50px;
     color: $white;
+
     h5{
         color: $orange;
+    }
+    h1{
+        font-size: 100px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 25px;
     }
 }
 
@@ -86,11 +94,6 @@ div{
     transition: color 0.3s ease;
     font-weight: bold;
     color: $white;
-
-    &:hover{
-    color: $orange;
-    
-    }
 }
 
 #quote{
@@ -233,7 +236,7 @@ div{
     // Bottom Shape
     #bottom-shape{
         position: absolute;
-        bottom: 28%;
+        bottom: 27%;
         left: 0;
         width: 100%;
         z-index: 0;
@@ -241,6 +244,7 @@ div{
         img{
             width: 100%;
             height: 200px;
+            object-fit: cover;
         }
     }
 

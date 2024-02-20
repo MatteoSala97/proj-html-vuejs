@@ -7,8 +7,8 @@
 
 <template>
     <div class="text-center mt-5">
-        <div>
-            <h5>Our Works</h5>
+        <div class="text-container p-2 mb-3">
+            <h5 class="">Our Works</h5>
             <h2>Featured Productions</h2>
             <p>Here's just a small sample of some of those projects that we're quite proud of. If you're looking for something specific feel free to get in contact with us.</p>
         </div>
@@ -43,6 +43,23 @@
 <style lang="scss" scoped>
 @use "../../assets/styles/general.scss" as *;
 @use "../../assets/styles/partials/mixins.scss" as *;
+
+.text-container{
+    width: 30%;
+    margin: 0 auto;
+    h5{
+        color:$purple;
+    }
+    h2{
+    font-size: 100px;
+    color: $aubergine;
+    }
+    p{
+        color: $grey;
+    }
+
+}
+
 
 #quote{
     z-index: 1;
