@@ -8,6 +8,7 @@ import CarouselAppFirst from './components/main/CarouselAppFirst.vue';
 import CarouselAppSecond from './components/main/CarouselAppSecond.vue';
 import CarouselAppThird from './components/main/CarouselAppThird.vue';
 import FormApp from './components/footer/FormApp.vue'
+import ContactUsApp from './components/footer/ContactUsApp.vue'
 
   export default{
     components:{
@@ -20,6 +21,7 @@ import FormApp from './components/footer/FormApp.vue'
       CarouselAppSecond,
       CarouselAppThird,
       FormApp,
+      ContactUsApp,
     },
     data(){
       return{
@@ -47,6 +49,7 @@ import FormApp from './components/footer/FormApp.vue'
   </main>
   <footer>
     <FormApp/>
+    <ContactUsApp/>
   </footer>
 </template>
 
