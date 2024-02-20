@@ -1,6 +1,11 @@
 <script>
     export default {
-        name: "ContactUsApp"
+        name: "ContactUsApp",
+        data(){
+            return{
+                
+            }
+        }
     }
 </script>
 

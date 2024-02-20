@@ -236,7 +236,7 @@ div{
     // Bottom Shape
     #bottom-shape{
         position: absolute;
-        bottom: 19%;
+        bottom: 27%;
         left: 0;
         width: 100%;
         z-index: 0;

@@ -3,7 +3,11 @@ export default {
   name: "CarouselAppFirst",
   data() {
     return {
-      
+      slides:[
+        {
+          image: 'src/assets/img/process1.png'
+        }
+      ]
     };
   },
   created() {

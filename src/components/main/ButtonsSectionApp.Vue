@@ -84,7 +84,7 @@
 @use "../../assets/styles/partials/mixins.scss" as *;
 .big-container{
     position: relative;
-    padding-top: 250px;
+    padding-top: 400px;
     
 }
 
@@ -138,9 +138,9 @@ h2{
 .smart-man{
     position: absolute;
     left: 0;
-    top: 0;
+    top: 20%;
     img{
-        width: 500px;
+        width: 700px;
     }
 }
 .rocket{
