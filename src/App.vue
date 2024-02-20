@@ -6,6 +6,7 @@ import CounterApp from './components/main/CounterApp.vue';
 import FeaturedApp from './components/main/FeaturedApp.vue';
 import CarouselAppFirst from './components/main/CarouselAppFirst.vue';
 import CarouselAppSecond from './components/main/CarouselAppSecond.vue';
+import CarouselAppThird from './components/main/CarouselAppThird.vue';
 
   export default{
     components:{
@@ -16,6 +17,7 @@ import CarouselAppSecond from './components/main/CarouselAppSecond.vue';
       FeaturedApp,
       CarouselAppFirst,
       CarouselAppSecond,
+      CarouselAppThird,
     },
     data(){
       return{
@@ -39,6 +41,7 @@ import CarouselAppSecond from './components/main/CarouselAppSecond.vue';
     <FeaturedApp/>
     <CarouselAppFirst/>
     <CarouselAppSecond/>
+    <CarouselAppThird/>
   </main>
 </template>
 
