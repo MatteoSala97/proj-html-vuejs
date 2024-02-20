@@ -3,13 +3,15 @@ import HeaderApp from './components/header/HeaderApp.vue';
 import HeroApp from './components/main/HeroApp.vue';
 import ButtonsSectionApp from './components/main/ButtonsSectionApp.vue';
 import CounterApp from './components/main/CounterApp.vue';
+import FeaturedApp from './components/main/FeaturedApp.vue';
 
   export default{
     components:{
       HeaderApp,
       HeroApp,
       ButtonsSectionApp,
-      CounterApp
+      CounterApp,
+      FeaturedApp
     },
     data(){
       return{
@@ -30,6 +32,7 @@ import CounterApp from './components/main/CounterApp.vue';
   <main>
     <ButtonsSectionApp/>
     <CounterApp/>
+    <FeaturedApp/>
   </main>
 </template>
 

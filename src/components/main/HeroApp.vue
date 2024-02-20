@@ -128,8 +128,8 @@ div{
     }
 }
 
-// Thumbnail Style
-figure{
+    // Thumbnail Style
+    figure{
         #hero-thumb{
             position: relative;
         }
@@ -169,7 +169,8 @@ figure{
     #globe-1{
         position: absolute;
         top: 150px;
-        left: 500px;
+        left: 700px;
+        animation: rotation 150s infinite linear;
 
         img{
             width: 180px
@@ -181,7 +182,7 @@ figure{
         position: absolute;
         top: 150px;
         right: 860px;
-
+        animation: rotation 200s infinite linear;
         img{
             width: 140px
         }
@@ -192,7 +193,7 @@ figure{
         position: absolute;
         top: -200px;
         right: 50%;
-
+        animation: rotation 100s infinite linear;
         img{
             width: 300px
         }
@@ -226,6 +227,7 @@ figure{
         position: absolute;
         top: 5%;
         right: 10%;
+        animation: wiggle 2.5s infinite;
     }
 
     // Bottom Shape

@@ -8,7 +8,7 @@
 <template>
     <div class="container-fluid text-center">
         <figure id="shape-top">
-            <img src="../../assets/img/shape-top.png" alt="">
+            <img src="../../assets/img/shape-top.png" alt="wavy top background">
         </figure>
         <div class="container">
             <h2>ANIDIO Quick Facts</h2>
@@ -42,12 +42,12 @@
 
         <!-- Globe Bg -->
         <figure id="globe">
-            <img src="../../assets/img/globe.png" alt="">
+            <img src="../../assets/img/globe.png" alt="Planet">
         </figure>
 
         <!-- Shape Bottom -->
         <figure id="shape-bottom">
-            <img src="../../assets/img/shape-bottom.png" alt="">
+            <img src="../../assets/img/shape-bottom.png" alt="Wavy bottom background">
         </figure>
     </div>
 
@@ -87,10 +87,10 @@
 
     #globe{
         position: absolute;
-        left: 40%;
+        left: 45%;
         bottom: 15%;
         z-index: 0;
-        
+        animation: rotation 100s infinite linear;
         img{
             width: 300px;
         }
