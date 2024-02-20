@@ -1,17 +1,97 @@
 <script>
-
-    export default {
-        name: "CarouselAppFirst"
-    }
+export default {
+  name: "CarouselAppFirst",
+  data() {
+    return {
+      
+    };
+  },
+  created() {
+    
+  },
+  methods: {
+    
+  }
+};
 </script>
 
 <template>
-   
-</template>
+    <div id="big-container " class="row mt-5">
+      <div class="col-6">
+        <figure id="rocket">
+          <img src="../../assets/img/process-thumb.png" alt="Girl riding a rocket">
+        </figure>
+      </div>
+        <div class="small-container col-4">
+            <div class="text-container text-center">
+                <h5>Our Process</h5>
+                <h2>Our Process for Your Animation Production</h2>
+                <p>We have an effective process for working on animation</p>
+            </div>
+            <div class="row">
+                <div class="col-5 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card">
+                    <img src="../../assets/img/process1.png" alt="1">
+                    <h2 class="mt-2">Scripting</h2>
+                    <p>We'll take your idea and create a technical script which consists of action notes and animation description</p>
+                    <span id="badge">1</span>
+                </div>
+                <div class="col-5 offset-2 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card">
+                    <img src="../../assets/img/process1.png" alt="2">
+                    <h2 class="mt-2">Pre-Production</h2>
+                    <p>We'll take your idea and create a technical script which consists of action notes and animation description</p>
+                    <span id="badge">2</span>
+                </div>
+                <div class="d-flex gap-3 justify-content-start mt-4">
+                    <button>
+                        <i class="fa-solid fa-arrow-left border rounded-circle p-3"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-arrow-right border rounded-circle p-3"></i>
+                    </button>
+                </div>
+            </div>
+        </div> 
+    </div>
+  </template>
+  
+  <style lang="scss" scoped>
+  @use "../../assets/styles/general.scss" as *;
+  @use "../../assets/styles/partials/mixins.scss" as *;
+  
+  #big-container {
+    width: 80%;
+    margin: 0 auto; 
+}
+#rocket{
+    margin-left: 300px;
+}
 
-<style lang="scss" scoped>
-@use "../../assets/styles/general.scss" as *;
-@use "../../assets/styles/partials/mixins.scss" as *;
+.small-container{
+    margin-top: 150px;
+}
 
+#card{
+    position: relative;
+}
 
-</style>
+  #badge{
+    border-radius: 50px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: $almostWhite;
+    border-radius: 150px;
+    padding: 10px 15px;
+  }
+
+  button{
+    background-color: $white;
+    border-radius: 50px;
+    color: $grey;
+    &:hover{
+        background-color: $orange;
+        color: $white;
+    }
+  }
+  </style>
+  
