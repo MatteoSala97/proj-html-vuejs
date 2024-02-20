@@ -62,6 +62,8 @@
     height: 450px;
     margin-top: 75px;
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     #shape-top{
         position: absolute;

@@ -7,6 +7,7 @@ import FeaturedApp from './components/main/FeaturedApp.vue';
 import CarouselAppFirst from './components/main/CarouselAppFirst.vue';
 import CarouselAppSecond from './components/main/CarouselAppSecond.vue';
 import CarouselAppThird from './components/main/CarouselAppThird.vue';
+import FormApp from './components/footer/FormApp.vue'
 
   export default{
     components:{
@@ -18,6 +19,7 @@ import CarouselAppThird from './components/main/CarouselAppThird.vue';
       CarouselAppFirst,
       CarouselAppSecond,
       CarouselAppThird,
+      FormApp,
     },
     data(){
       return{
@@ -43,6 +45,9 @@ import CarouselAppThird from './components/main/CarouselAppThird.vue';
     <CarouselAppSecond/>
     <CarouselAppThird/>
   </main>
+  <footer>
+    <FormApp/>
+  </footer>
 </template>
 
 <style lang="scss">
