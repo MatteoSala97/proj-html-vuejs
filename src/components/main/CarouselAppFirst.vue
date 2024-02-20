@@ -16,7 +16,7 @@ export default {
 </script>
 
 <template>
-    <div id="big-container " class="row mt-5">
+    <div id="big-container " class="row mt-5 mb-5">
       <div class="col-6">
         <figure id="rocket">
           <img src="../../assets/img/process-thumb.png" alt="Girl riding a rocket">
