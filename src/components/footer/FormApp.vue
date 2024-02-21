@@ -37,7 +37,7 @@
 
 .container-fluid{
     background-image: url(../../assets/img/preloader.png);
-    height: 450px;
+    height: 500px;
     margin-top: 75px;
     position: relative;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 
     #shape-bottom{
         position: absolute;
-        bottom: -5%;
+        bottom: -4%;
         left: 0;
         width: 100%;
         
