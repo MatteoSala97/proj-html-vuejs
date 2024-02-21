@@ -72,14 +72,14 @@ export default {
                 <div class="col-5 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card"
                 >
                     <img :src="slides[currentIndex].image" alt="1">
-                    <h2 class="mt-2">Scripting</h2>
+                    <h3 class="mt-2">Scripting</h3>
                     <p>{{ slides[currentIndex].phrase }}</p>
                     <span id="badge">{{ slides[currentIndex].badge }}</span>
                   </div>
                   <div class="col-5 offset-1 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card"
                   >
                     <img :src="slides[(currentIndex + 1) % slides.length].image" alt="2">
-                    <h2 class="mt-2">Pre-Production</h2>
+                    <h3 class="mt-2">Pre-Production</h3>
                     <p>{{ slides[currentIndex].phrase }}</p>
                     <span id="badge">{{ slides[(currentIndex + 1) % slides.length].badge }}</span>
                   </div>
@@ -143,5 +143,21 @@ export default {
         color: $white;
     }
   }
+
+  h5{
+        color: $purple;
+    }
+    h2{
+        font-size: 100px;
+        font-weight: bold;
+        color: $aubergine;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 25px;
+    }
   </style>
   

@@ -10,7 +10,7 @@
 </script>
 
 <template>
-    <div class="d-flex justify-content-around align-items-center pt-4">
+    <div class="d-flex justify-content-around align-items-center pt-4 mt-5">
         <figure>
             <a href="#">
                 <img src="../../assets/img/footer-logo.png" alt="Anidio Logo">

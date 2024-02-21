@@ -75,7 +75,25 @@ export default {
 <style lang="scss" scoped>
 @use "../../assets/styles/general.scss" as *;
 @use "../../assets/styles/partials/mixins.scss" as *;
-  
 
+#big-container{
+  padding-top: 100px;
+}
+  
+h4{
+      color: $purple;
+    }
+    h2{
+        font-size: 100px;
+        font-weight: bold;
+        color: $aubergine;
+    }
+    h3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 25px;
+    }
 </style>
   

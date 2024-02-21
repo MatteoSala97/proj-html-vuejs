@@ -48,6 +48,7 @@ export default {
   padding: 10px 17px;
   border-radius: 50px;
   color: $white;
+  z-index: 5;
   &:hover{
     color: $orange;
     background-color: $white;
