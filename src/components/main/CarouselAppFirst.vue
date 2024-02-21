@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     startSlide: function(){
-      this.timer = setInterval(this.next, 1000)
+      this.timer = setInterval(this.next, 3000)
     },
     next: function(){
       if(this.currentIndex === this.slides.length - 1){

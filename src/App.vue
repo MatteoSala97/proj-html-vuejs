@@ -9,6 +9,7 @@ import CarouselAppSecond from './components/main/CarouselAppSecond.vue';
 import CarouselAppThird from './components/main/CarouselAppThird.vue';
 import FormApp from './components/footer/FormApp.vue'
 import ContactUsApp from './components/footer/ContactUsApp.vue'
+import BackToTopButton from './components/header/BackToTopButton.vue'
 
   export default{
     components:{
@@ -22,14 +23,11 @@ import ContactUsApp from './components/footer/ContactUsApp.vue'
       CarouselAppThird,
       FormApp,
       ContactUsApp,
+      BackToTopButton
     },
     data(){
       return{
-        
       }
-    },
-    methods:{
-      
     }
   }
 </script>
@@ -38,6 +36,7 @@ import ContactUsApp from './components/footer/ContactUsApp.vue'
   <header>
     <HeaderApp/>
     <HeroApp/>
+    <BackToTopButton/>
   </header>
   <main>
     <ButtonsSectionApp/>
