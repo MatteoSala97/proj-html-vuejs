@@ -106,6 +106,10 @@ export default {
 }
 #rocket{
     margin-left: 300px;
+    transition: transform 1s ease;
+    &:hover{
+      transform: translateX(30px);
+    }
 }
 
 .small-container{

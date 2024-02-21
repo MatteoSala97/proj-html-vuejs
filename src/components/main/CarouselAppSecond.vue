@@ -4,14 +4,57 @@ export default {
   name: "CarouselAppSecond",
   data() {
     return {
-      
+        currentIndex: 0,
+        timer: null,
+      slides:[
+        {
+            image: "src/assets/img/team1.png",
+            name: "Robert Coleman",
+            role: "Owner & Creative Director",
+
+        },
+        {
+            image: "src/assets/img/team2.png",
+            name: "Hector Vargas",
+            role: "Project Lead & Senior Animator",
+
+        },
+        {
+            image: "src/assets/img/team1.png",
+            name: "Don Woods",
+            role: "Administrator",
+
+        },
+        {
+            image: "src/assets/img/team2.png",
+            name: "Thomas Nash",
+            role: "2d Animator & Compositor",
+
+        },
+      ]
     };
   },
-  created() {
-    
+  mounted: function() {
+    this.startSlide()
   },
   methods: {
-    
+    startSlide: function(){
+      this.timer = setInterval(this.next, 1000)
+    },
+    next: function(){
+      if(this.currentIndex === this.slides.length - 1){
+        this.currentIndex = 0
+      } else{
+        this.currentIndex ++
+      }
+    },
+    prev: function(){
+      if((this.currentIndex - 1) < 0){
+        this.currentIndex = this.slides.length - 1
+      } else{
+        this.currentIndex --
+      }
+    }
   }
 };
 </script>
@@ -26,49 +69,37 @@ export default {
             <p>We create new worlds! Let's collaborate and create engaging, effective, award-winning animations.</p>
         </div>
         <div class="d-flex justify-content-around pt-5" id="small-container">
-            <div class="d-flex flex-column align-items-center ">
-                <img src="../../assets/img/team1.png" alt="1">
-                <h5 class="mt-3">Robert Coleman</h5>
+            <div class="d-flex flex-column align-items-center">
+                <img :src="slides[currentIndex].image" alt="1">
+                <h5 class="mt-3">{{ slides[currentIndex].name }}</h5>
                 <span>
-                    Owner & Creative Director
+                    {{ slides[currentIndex].role }}
                 </span>
-                <figure class="d-flex gap-3">
+                <figure class="d-flex gap-3 mt-2">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-x-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </figure>
             </div>
             <div class="d-flex flex-column align-items-center ">
-                <img src="../../assets/img/team1.png" alt="1">
-                <h5 class="mt-3">Hector Vargas</h5>
+                <img :src="slides[(currentIndex + 1) % slides.length].image" alt="1">
+                <h5 class="mt-3">{{ slides[(currentIndex + 1) % slides.length].name }}</h5>
                 <span>
-                    Project Lead & Senior Animator
+                    {{ slides[(currentIndex + 1) % slides.length].role }}
                 </span>
-                <figure class="d-flex gap-3">
+                <figure class="d-flex gap-3 mt-2">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-x-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                 </figure>
             </div>
             <div class="d-flex flex-column align-items-center">
-                <img src="../../assets/img/team2.png" alt="2">
-                <h5 class="mt-3">Don Woods</h5>
+                <img :src="slides[(currentIndex + 2) % slides.length].image" alt="3">
+                <h5 class="mt-3">{{ slides[(currentIndex + 2) % slides.length].name }}</h5>
                 <span>
-                    Administrator
+                    {{ slides[(currentIndex + 2) % slides.length].role }}
                 </span>
-                <figure class="d-flex gap-3">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-x-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </figure>
-            </div>
-            <div class="d-flex flex-column align-items-center">
-                <img src="../../assets/img/team1.png" alt="3">
-                <h5 class="mt-3">Thomas Nash</h5>
-                <span>
-                    2d Animator & Compositor
-                </span>
-                <figure class="d-flex gap-3">
+                <figure class="d-flex gap-3 mt-2">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-x-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
@@ -77,7 +108,7 @@ export default {
         </div>
         <div class="d-flex justify-content-center mt-4 align-items-center gap-2">
             <button>
-                <i class="fa-solid fa-arrow-left border rounded-circle p-3"></i>
+                <i class="fa-solid fa-arrow-left border rounded-circle p-3" @click="prev"></i>
             </button>
             <div class="d-flex gap-3">
                 <i class="fa-solid fa-circle"></i>
@@ -85,7 +116,7 @@ export default {
                 <i class="fa-solid fa-circle"></i>
             </div>
             <button>
-                <i class="fa-solid fa-arrow-right border rounded-circle p-3"></i>
+                <i class="fa-solid fa-arrow-right border rounded-circle p-3" @click="next"></i>
             </button>
         </div>
     </div>
