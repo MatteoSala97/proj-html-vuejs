@@ -34,11 +34,11 @@ export default {
   },
   methods: {
     startSlide: function(){
-      this.timer = setInterval(this.next, 500)
+      this.timer = setInterval(this.next, 1000)
     },
     next: function(){
       if(this.currentIndex + 1 == this.slides.length){
-        this.currentIndex = 0
+        this.currentIndex = 0 
       } else{
         this.currentIndex = this.currentIndex + 1
       }
@@ -71,14 +71,14 @@ export default {
                 <div class="col-5 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card"
                 v-for="i in [currentIndex]" :key="i"
                 >
-                    <img :src="slides[i].image" alt="1">
+                    <img :src="slides[i +1 ].image" alt="1">
                     <h2 class="mt-2">Scripting</h2>
                     <p>We'll take your idea and create a technical script which consists of action notes and animation description</p>
                     <span id="badge">1</span>
                   </div>
                   <div class="col-5 offset-1 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card"
                   v-for="i in [currentIndex]" :key="i">
-                    <img :src="slides[i+1].image" alt="2">
+                    <img :src="slides[i].image" alt="2">
                     <h2 class="mt-2">Pre-Production</h2>
                     <p>We'll take your idea and create a technical script which consists of action notes and animation description</p>
                     <span id="badge">2</span>
@@ -114,6 +114,9 @@ export default {
 
 #card{
     position: relative;
+}
+#card img{
+    height: 100px;
 }
 
   #badge{
