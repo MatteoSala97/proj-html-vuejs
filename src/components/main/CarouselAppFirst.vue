@@ -37,19 +37,20 @@ export default {
       this.timer = setInterval(this.next, 1000)
     },
     next: function(){
-      if(this.currentIndex + 1 == this.slides.length){
-        this.currentIndex = 0 
+      if(this.currentIndex === this.slides.length - 1){
+        this.currentIndex = 0
       } else{
-        this.currentIndex = this.currentIndex + 1
+        this.currentIndex ++
       }
     },
     prev: function(){
       if((this.currentIndex - 1) < 0){
         this.currentIndex = this.slides.length - 1
       } else{
-        this.currentIndex = this.currentIndex - 1
+        this.currentIndex --
       }
     }
+    
   }
 };
 </script>
@@ -69,19 +70,18 @@ export default {
             </div>
             <div class="row">
                 <div class="col-5 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card"
-                v-for="i in [currentIndex]" :key="i"
                 >
-                    <img :src="slides[i +1 ].image" alt="1">
+                    <img :src="slides[currentIndex].image" alt="1">
                     <h2 class="mt-2">Scripting</h2>
-                    <p>We'll take your idea and create a technical script which consists of action notes and animation description</p>
-                    <span id="badge">1</span>
+                    <p>{{ slides[currentIndex].phrase }}</p>
+                    <span id="badge">{{ slides[currentIndex].badge }}</span>
                   </div>
                   <div class="col-5 offset-1 d-flex flex-column align-items-center text-center border rounded-4 p-4" id="card"
-                  v-for="i in [currentIndex]" :key="i">
-                    <img :src="slides[i].image" alt="2">
+                  >
+                    <img :src="slides[(currentIndex + 1) % slides.length].image" alt="2">
                     <h2 class="mt-2">Pre-Production</h2>
-                    <p>We'll take your idea and create a technical script which consists of action notes and animation description</p>
-                    <span id="badge">2</span>
+                    <p>{{ slides[currentIndex].phrase }}</p>
+                    <span id="badge">{{ slides[(currentIndex + 1) % slides.length].badge }}</span>
                   </div>
                 <div class="d-flex gap-3 justify-content-start mt-4">
                     <button>
@@ -114,6 +114,7 @@ export default {
 
 #card{
     position: relative;
+    background-color: $white;
 }
 #card img{
     height: 100px;
