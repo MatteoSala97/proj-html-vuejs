@@ -94,6 +94,7 @@ h4{
     }
     p{
         font-size: 25px;
+        color: $grey;
     }
 </style>
   

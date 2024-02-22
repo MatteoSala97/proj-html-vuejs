@@ -65,6 +65,7 @@
     h2{
     font-size: 100px;
     color: $aubergine;
+    font-weight: bold;
     }
     p{
         color: $grey;

@@ -192,6 +192,7 @@ button{
     }
     p{
         font-size: 25px;
+        color: $grey;
     }
 </style>
   
